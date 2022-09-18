@@ -21,7 +21,6 @@ function App() {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <h1>Hello World</h1>
       <Routes>
        {data && <Route exact path="/" element={<Hero data={data}/>} />}
        {data && <Route path="/profil/:id" element={<FullProfils data= {data} />} />}
