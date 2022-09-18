@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from './Component/Hero';
 import FullProfils from './Component/fullProfils';
