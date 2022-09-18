@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Integrify/static/css/main.259de736.css",
+    "main.js": "/Integrify/static/js/main.4d14810d.js",
+    "static/js/787.a938d110.chunk.js": "/Integrify/static/js/787.a938d110.chunk.js",
+    "index.html": "/Integrify/index.html",
+    "main.259de736.css.map": "/Integrify/static/css/main.259de736.css.map",
+    "main.4d14810d.js.map": "/Integrify/static/js/main.4d14810d.js.map",
+    "787.a938d110.chunk.js.map": "/Integrify/static/js/787.a938d110.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.259de736.css",
+    "static/js/main.4d14810d.js"
+  ]
+}
