@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: rgba(31, 97, 141, 0.901);
+}
