@@ -1,93 +1,46 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import "./fullProfils.css";
 
+const LineInfo = ({title, value}) => (
+    <div className="line">
+        <div className="key">
+            <p>{title}:</p>
+        </div>
+        <div className="value">
+            <p> {value}</p>
+        </div>
+    </div>
+)
+
+const Backbutton = () => {
+    let navigate = useNavigate();
+    return (
+        <>
+        <div className="btn-container">
+             <button onClick={() => navigate(-1)}>Go back</button>
+        </div>
+        </>
+    );
+};
 
 const FullProfils = ({data}) => {
     const { id } = useParams();
+    const profile = data.filter(user => user.id === parseInt(id))
     return (
-        <section className="full">
+        <section className="full"> 
             <div className="containeur">
-                <div className="line">
-                    <div className="key">
-                        <p>Name:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].name}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Username:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].username}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>E-mail:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].email}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Phone:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].phone}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Company Name:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].company.name}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Web Site:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].website}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Street:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].address.street}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Suite:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].address.suite}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>City:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].address.city}</p>
-                    </div>
-                </div>
-                <div className="line">
-                    <div className="key">
-                        <p>Zip Code:</p>
-                    </div>
-                    <div className="value">
-                        <p> {data[id - 1].address.zipcode}</p>
-                    </div>
-                </div>
+                <LineInfo title="Name" value={profile[0].name} />
+                <LineInfo title="Username" value={profile[0].username} />
+                <LineInfo title="E-mail" value={profile[0].email} />
+                <LineInfo title="Phone" value={profile[0].phone} />
+                <LineInfo title="Company Name" value={profile[0].company.name} />
+                <LineInfo title="Web Site" value={profile[0].website} />
+                <LineInfo title="Street" value={profile[0].address.street} />
+                <LineInfo title="City" value={profile[0].address.city} />
+                <LineInfo title="Zip code" value={profile[0].address.zipcode} />
+                <Backbutton />
             </div>
         </section>
     )

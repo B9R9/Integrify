@@ -1,26 +1,28 @@
 
 .full {
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .containeur{
     background: rgba(255, 255, 255, 0.589);
-
+    padding: 20px;
     width: 30vw;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
-
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
 }
 
 .line {
     display: flex;
-    justify-content: space-around;
-    justify-content: center;
+    width: 100%;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -44,10 +46,22 @@ p {
 }
 
 .key p{
-    text-align: end;
+    /* text-align: end; */
     padding-right: 1rem;
 }
 .value p{
     text-align: center;
 }
 
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.btn-container > button{
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
