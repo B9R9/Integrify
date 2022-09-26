@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Integrify/static/css/main.34ec3e20.css",
-    "main.js": "/Integrify/static/js/main.880a42cc.js",
-    "static/js/787.a938d110.chunk.js": "/Integrify/static/js/787.a938d110.chunk.js",
-    "index.html": "/Integrify/index.html",
-    "main.34ec3e20.css.map": "/Integrify/static/css/main.34ec3e20.css.map",
-    "main.880a42cc.js.map": "/Integrify/static/js/main.880a42cc.js.map",
-    "787.a938d110.chunk.js.map": "/Integrify/static/js/787.a938d110.chunk.js.map"
+    "main.css": "./static/css/main.34ec3e20.css",
+    "main.js": "./static/js/main.9f0d0627.js",
+    "static/js/787.a938d110.chunk.js": "./static/js/787.a938d110.chunk.js",
+    "index.html": "./index.html",
+    "main.34ec3e20.css.map": "./static/css/main.34ec3e20.css.map",
+    "main.9f0d0627.js.map": "./static/js/main.9f0d0627.js.map",
+    "787.a938d110.chunk.js.map": "./static/js/787.a938d110.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34ec3e20.css",
-    "static/js/main.880a42cc.js"
+    "static/js/main.9f0d0627.js"
   ]
 }
