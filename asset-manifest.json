@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Integrify/static/css/main.373e8515.css",
+    "main.css": "/Integrify/static/css/main.34ec3e20.css",
     "main.js": "/Integrify/static/js/main.880a42cc.js",
     "static/js/787.a938d110.chunk.js": "/Integrify/static/js/787.a938d110.chunk.js",
     "index.html": "/Integrify/index.html",
-    "main.373e8515.css.map": "/Integrify/static/css/main.373e8515.css.map",
+    "main.34ec3e20.css.map": "/Integrify/static/css/main.34ec3e20.css.map",
     "main.880a42cc.js.map": "/Integrify/static/js/main.880a42cc.js.map",
     "787.a938d110.chunk.js.map": "/Integrify/static/js/787.a938d110.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.373e8515.css",
+    "static/css/main.34ec3e20.css",
     "static/js/main.880a42cc.js"
   ]
 }
