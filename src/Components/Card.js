@@ -1,8 +1,8 @@
 import React from "react";
-import Profil from "./profil";
-import "./Hero.css";
+import Profil from "./Profils";
+import '../Styles/Cards.css';
 
-const Hero = ({data}) => {
+const Card = ({data}) => {
     return (
         <section className="hero">
          <div className="hero-containeur">
@@ -12,4 +12,4 @@ const Hero = ({data}) => {
     )
 }
 
-export default Hero;
+export default Card;

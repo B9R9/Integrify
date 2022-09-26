@@ -1,31 +1,11 @@
 import React from "react";
+import LineInfo  from "./Line_info";
+import Backbutton from "./Button";
 import { useParams } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
-import "./fullProfils.css";
+import '../Styles/CompleteProfil.css';
 
-const LineInfo = ({title, value}) => (
-    <div className="line">
-        <div className="key">
-            <p>{title}:</p>
-        </div>
-        <div className="value">
-            <p> {value}</p>
-        </div>
-    </div>
-)
 
-const Backbutton = () => {
-    let navigate = useNavigate();
-    return (
-        <>
-        <div className="btn-container">
-             <button onClick={() => navigate(-1)}>Go back</button>
-        </div>
-        </>
-    );
-};
-
-const FullProfils = ({data}) => {
+const CompleteProfil = ({data}) => {
     const { id } = useParams();
     const profile = data.filter(user => user.id === parseInt(id))
     return (
@@ -45,4 +25,4 @@ const FullProfils = ({data}) => {
         </section>
     )
 }
-export default FullProfils;
+export default CompleteProfil;

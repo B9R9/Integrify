@@ -1,9 +1,9 @@
 import React from "react";
-import './Profil.css';
 import { Link } from 'react-router-dom';
+import '../Styles/Profils.css';
 
 
-const Profil = ({data}) => {
+const Profils = ({data}) => {
     return (
         <>
         {data.map((profil, index) => 
@@ -27,4 +27,4 @@ const Profil = ({data}) => {
     )
 }
 
-export default Profil;
+export default Profils;

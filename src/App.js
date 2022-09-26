@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from './Component/Hero';
-import FullProfils from './Component/fullProfils';
+import Card from './Components/Card';
+import CompleteProfil from './Components/CompleteProfil';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { useEffect, useState } from 'react';
 import './App.css';
@@ -22,8 +22,8 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-       {data && <Route exact path="/" element={<Hero data={data}/>} />}
-       {data && <Route path="/profil/:id" element={<FullProfils data= {data} />} />}
+       {data && <Route exact path="/" element={<Card data={data}/>} />}
+       {data && <Route path="/profil/:id" element={<CompleteProfil data= {data} />} />}
       </Routes>
     </Router>
   );
