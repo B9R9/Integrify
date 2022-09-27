@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import '../Styles/Profils.css';
-
+import { Link } from 'react-router-dom';
 
 const Profils = ({data}) => {
     return (
@@ -18,7 +17,7 @@ const Profils = ({data}) => {
                         <a href={profil.website}>{profil.website}</a>
                     </div>
                     <button className="profil-link">
-                        <Link to={`/profil/${profil.id}`}>More Details</Link>
+                        <Link to={`/profile/${profil.id}`}>More Details</Link>
                     </button>
                 </div>
             </div>

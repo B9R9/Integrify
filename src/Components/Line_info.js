@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/CompleteProfil.css';
+import '../Styles/Profile.css';
 
 const LineInfo = ({title, value}) => (
     <div className="line">

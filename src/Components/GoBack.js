@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import '../Styles/CompleteProfil.css';
+import '../Styles/Profile.css';
 
-const Backbutton = () => {
+const GoBack = () => {
     let navigate = useNavigate();
     return (
         <>
@@ -13,4 +13,4 @@ const Backbutton = () => {
     );
 };
 
-export default Backbutton;
+export default GoBack;

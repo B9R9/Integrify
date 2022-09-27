@@ -1,11 +1,11 @@
 import React from "react";
-import LineInfo  from "./Line_info";
-import Backbutton from "./Button";
+import LineInfo  from "../Components/Line_info";
+import GoBack from "../Components/GoBack";
 import { useParams } from "react-router-dom";
-import '../Styles/CompleteProfil.css';
+import '../Styles/Profile.css';
 
 
-const CompleteProfil = ({data}) => {
+const Profile = ({data}) => {
     const { id } = useParams();
     const profile = data.filter(user => user.id === parseInt(id))
     return (
@@ -20,9 +20,9 @@ const CompleteProfil = ({data}) => {
                 <LineInfo title="Street" value={profile[0].address.street} />
                 <LineInfo title="City" value={profile[0].address.city} />
                 <LineInfo title="Zip code" value={profile[0].address.zipcode} />
-                <Backbutton />
+                <GoBack />
             </div>
         </section>
     )
 }
-export default CompleteProfil;
+export default Profile;
