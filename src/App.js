@@ -19,7 +19,6 @@ function App() {
             })
     }, []);
 
-    // basename={process.env.PUBLIC_URL}
   return (
     <Router >
       <Routes>
